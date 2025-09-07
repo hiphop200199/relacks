@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        overflow-x: clip;
+        --c1: #fcd8cd;
+        --c2: #feebf6;
+        --c3: #ebd6fb;
+        --c4: #687fe5;
+        color: var(--c4);
+      }
+      h1 {
+        font-size: 86px;
+        text-align: center;
+        padding-top: 60px;
+      }
+
+      p.content {
+        font-size: 28px;
+        width: 100%;
+        overflow-x: auto;
+        height: 25dvh;
+      }
+      p.age {
+        font-size: 20px;
+        overflow-x: auto;
+        width: 30%;
+        height: 20dvh;
+        word-wrap: break-word;
+      }
+      p.editor {
+        font-size: 16px;
+        text-align: end;
+      }
+     
+
+      article {
+        width: 80dvw;
+        max-width: 600px;
+        margin: 30px auto;
+        font-size: 28px;
+        line-height: 3;
+      }
+
+      article::first-letter {
+        font-size: 36px;
+        font-weight: 700;
+      }
+
+    
+     nav{
+      position: absolute;
+      right: 2%;
+      top: 2%;
+      a{
+        font-size: 20px;
+        font-weight: 700;
+        margin-inline: 20px;
+        padding: 3px 5px;
+        border-radius: 5px;
+        background-color: var(--c4);
+        color: var(--c1);
+        text-decoration: none;
+      }
+     }
+
+      h2{
+         font-size: 36px;
+        text-align: center;
+     
+      }
+
+
+      .top {
+        position: fixed;
+        display: grid;
+        place-items: center;
+        bottom: 3dvh;
+        right: 3dvw;
+        text-decoration: none;
+        cursor: pointer;
+        color: var(--c4);
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .page {
+        position: relative;
+        min-height: 100dvh;
+        background-color: var(--c2);
+      }
+
+      .grid{
+        padding: 20px;
+         width: 80dvw;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        .card{
+          width: 80%;
+          max-width: 400px;
+         margin-block: 10px;
+         &.right{
+          align-self: flex-end;
+         }
+          img{
+            width: 80%;
+          }
+          .explain{
+            font-size: 18px;
+          }
+        }
+      }
+
+      .form{
+        display: flex;
+        flex-direction: column;
+        width: 80dvw;
+        max-width: 600px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        label{
+          font-size: 18px;
+          margin-block: 5px;
+        }
+        input,textarea{
+          font-size: 20px;
+          padding: 3px;
+          accent-color: var(--c4);
+          outline: none;
+          border: 2px solid var(--c4);
+             border-radius: 5px;
+             &[type="file"]{
+              display: none;
+             }
+        }
+        img{
+          width: 60%;
+          max-width: 400px;
+          display: block;
+          margin: 0 auto;
+          cursor: pointer;
+        }
+        button{
+          align-self: center;
+          width: fit-content;
+          padding: 3px 5px;
+          border-radius: 5px;
+          background-color: #687fe5;
+          color: var(--c1);
+          font-size: 20px;
+          font-weight: 700;
+          border: none;
+          margin-block: 5px;
+        }
+      }
+
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page">
+      <nav>
+        <a href="/page/index">index</a>
+        <a href="/page/crochet">crochet</a>
+        <a href="/page/share">share</a>
+      </nav>
+      <h1>Game</h1>
+      <article>
+        遊戲自古以來就是常見的放鬆、休閒娛樂的管道之一，對我來說也是。玩遊戲的過程中可以讓自己沉浸在現實中無法實現的情況，想像自己是位勇者，踏上除惡的旅程，即使故事不陌生，依舊能夠帶來單純的快樂！
+      </article>
+      <section class="grid">
+        <div class="card">
+          <img src="./image/upload-image.png" alt="">
+          <p class="explain">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quos? Eligendi molestiae libero ratione blanditiis, in veritatis, quo dolor ad assumenda accusantium excepturi ea soluta sint nostrum maiores incidunt. Laudantium?</p>
+          <p>eric</p>
+          <p>2025/12/24</p>
+        </div>
+         <div class="card">
+          <img src="./image/upload-image.png" alt="">
+          <p class="explain">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quos? Eligendi molestiae libero ratione blanditiis, in veritatis, quo dolor ad assumenda accusantium excepturi ea soluta sint nostrum maiores incidunt. Laudantium?</p>
+          <p>eric</p>
+          <p>2025/12/24</p>
+        </div>
+      </section>
+
+      <h2>你也有獨特的放鬆管道嗎？歡迎跟我們分享！</h2>
+        <form action="" class="form">
+            <label>怎麼稱呼你？</label>
+            <input type="text">
+            <label>給予描述</label>
+            <textarea name="" id=""></textarea>
+            <label>有圖片也可以分享</label>
+            <label for="image">
+            <img src="/image/upload-image.png" id="upload-image-source" alt="upload-image">
+          </label>
+          <input type="file" name="" id="image" accept="image/png,image/jpg,image/jpeg,image/gif">
+          <button type="submit">送出</button>
+        </form>
+      
+      <a href="#" class="top">top</a>
+    </div>
+  </body>
+</html>

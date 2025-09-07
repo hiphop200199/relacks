@@ -1,0 +1,40 @@
+h1 {
+        font-size: 86px;
+        text-align: center;
+        padding-top: 60px;
+      }
+
+      h2{
+         font-size: 36px;
+        text-align: center;
+     
+      }
+
+        article {
+        width: 80dvw;
+        max-width: 600px;
+        margin: 30px auto;
+        font-size: 28px;
+        line-height: 3;
+      }
+
+      article::first-letter {
+        font-size: 36px;
+        font-weight: 700;
+      }
+
+       nav{
+      position: absolute;
+      right: 2%;
+      top: 2%;
+      a{
+        font-size: 20px;
+        font-weight: 700;
+        margin-inline: 20px;
+        padding: 3px 5px;
+        border-radius: 5px;
+        background-color: var(--c4);
+        color: var(--c1);
+        text-decoration: none;
+      }
+     }

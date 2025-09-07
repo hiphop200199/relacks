@@ -1,0 +1,22 @@
+  .grid{
+        padding: 20px;
+         width: 80dvw;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        .card{
+          width: 80%;
+          max-width: 400px;
+         margin-block: 10px;
+         &.right{
+          align-self: flex-end;
+         }
+          img{
+            width: 80%;
+          }
+          .explain{
+            font-size: 18px;
+          }
+        }
+      }
