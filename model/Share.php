@@ -1,8 +1,7 @@
 <?php
-namespace Model;
 
-use Database\Db;
-use PDO;
+
+require_once $_SERVER['DOCUMENT_ROOT'] . '/database/db.php';
 
 class Share
 {

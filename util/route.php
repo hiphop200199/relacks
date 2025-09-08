@@ -2,10 +2,7 @@
 
 return
 [
-  [
-    'path'=>'/',
-    'controller'=>'Index'
-   ],
+  
    [
      'path'=>'/game',
     'controller'=>'Game'
@@ -18,5 +15,8 @@ return
      'path'=>'/share',
     'controller'=>'Share'
    ],
-  
+  [
+    'path'=>'/',
+    'controller'=>'Index'
+   ],
 ];

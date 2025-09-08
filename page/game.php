@@ -2,8 +2,8 @@
     
       <nav>
         <a href="/">index</a>
-        <a href="/crochet">crochet</a>
-        <a href="/share">share</a>
+        <a href="./crochet.php">crochet</a>
+        <a href="./share.php">share</a>
       </nav>
       <h1>Game</h1>
       <article>

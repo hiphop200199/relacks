@@ -1,12 +1,13 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/component/head.php'; ?>
-
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/controller/Share.php';?>
 <nav>
   <a href="/">index</a>
-  <a href="/game">game</a>
-  <a href="/crochet">crochet</a>
+  <a href="./game.php">game</a>
+  <a href="./crochet.php">crochet</a>
 </nav>
 
 <section class="grid">
+  <?php if(!empty($list)) :?>
   <?php foreach ($list as $k => $v) : ?>
     <div class="card <?= ($k + 1) % 2 == 0 ? 'right' : '' ?>">
       <p class="explain"><?= htmlspecialchars($v['content']) ?></p>
@@ -14,6 +15,7 @@
       <p><?= date('Y/m/d H:i') ?></p>
     </div>
   <?php endforeach; ?>
+  <?php endif;?>
 </section>
 <h1>你也有獨特的放鬆管道嗎？歡迎跟我們分享！</h1>
 <form method="post" class="form">

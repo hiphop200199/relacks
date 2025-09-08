@@ -1,9 +1,9 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/component/head.php'; ?>
     
       <nav>
-        <a href="/game">game</a>
-        <a href="/crochet">crochet</a>
-        <a href="/share">share</a>
+        <a href="./page/game.php">game</a>
+        <a href="./page/crochet.php">crochet</a>
+        <a href="./page/share.php">share</a>
       </nav>
       <h1>Relacks?</h1>
       <article>

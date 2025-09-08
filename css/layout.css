@@ -8,6 +8,7 @@
   --c2: #feebf6;
   --c3: #ebd6fb;
   --c4: #687fe5;
+   color: var(--c4);
 }
  .page {
         position: relative;
