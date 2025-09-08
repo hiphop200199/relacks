@@ -17,7 +17,7 @@
   <?php endforeach; ?>
   <?php endif;?>
 </section>
-<h1>你也有獨特的放鬆管道嗎？歡迎跟我們分享！</h1>
+<h2>你也有獨特的放鬆管道嗎？歡迎跟我們分享！</h2>
 <form method="post" class="form">
   <label>怎麼稱呼你？</label>
   <input type="text" name="nickname" required>
