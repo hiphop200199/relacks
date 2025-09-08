@@ -2,6 +2,7 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/model/Share.php';
 
+ $shareModel = new Share(new Db());
 
 if (strtolower($_SERVER['REQUEST_METHOD']) == 'post') {
     $nickname = htmlspecialchars(strip_tags($_POST['nickname']));
@@ -10,6 +11,6 @@ if (strtolower($_SERVER['REQUEST_METHOD']) == 'post') {
 }
 
 
- $shareModel = new Share(new Db());
+
 $list = $shareModel->getList(); 
 //Util::view('share', ['list' => $list]);

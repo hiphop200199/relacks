@@ -18,7 +18,7 @@
   <?php endif;?>
 </section>
 <h2>你也有獨特的放鬆管道嗎？歡迎跟我們分享！</h2>
-<form method="post" class="form">
+<form action="<?=$_SERVER['PHP_SELF']?>" method="post" class="form">
   <label>怎麼稱呼你？</label>
   <input type="text" name="nickname" required>
   <label>給予描述</label>
