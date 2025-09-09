@@ -12,7 +12,7 @@
     <div class="card <?= ($k + 1) % 2 == 0 ? 'right' : '' ?>">
       <p class="explain"><?= htmlspecialchars($v['content']) ?></p>
       <p><?= htmlspecialchars($v['nickname']) ?></p>
-      <p><?= date('Y/m/d H:i') ?></p>
+      <p><?= date('Y/m/d H:i',$v['create_time']) ?></p>
     </div>
   <?php endforeach; ?>
   <?php endif;?>
